@@ -1,0 +1,11 @@
+[package]
+name = "sigmaos-affy"
+version = "0.1.0"
+edition = "2021"
+authors = ["SigmaOS Contributors"]
+description = "SigmaOS affy component"
+license = "MIT OR Apache-2.0"
+
+[lib]
+name = "sigmaos_affy"
+path = "src/lib.rs"
