@@ -1,64 +1,50 @@
-# SigmaOS-affy Component Wiki
+# SigmaOS-SigmaOS-affy Component Wiki
 
 ## Overview
-SigmaOS-affy provides bioinformatics and Affymetrix microarray analysis support for the SigmaOS operating system. It demonstrates the data analysis subsystem and bioinformatics tools within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic bioinit initialization.
+SigmaOS-SigmaOS-affy provides GitHub description is a placeholder; component scope remains unclassified. for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
 - Single Responsibility
-- Bioinformatics Abstraction
-- Fail-Fast on Bioinformatics Initialization Errors
-- Deterministic Bioinformatics Setup
-- Clear Abstraction Over Bioinformatics APIs
-- Composition over Inheritance for bioinformatics extensions
+- SigmaOS-affy Abstraction
+- Fail-Fast on SigmaOS-affy Initialization Errors
+- Deterministic SigmaOS-affy Setup
+- Clear Abstraction Over SigmaOS-affy APIs
+- Composition over Inheritance for SigmaOS-affy extensions
 
 ## Architecture
-SigmaOS-affy follows a bioinformatics pattern:
-- **Analysis Core**: Provides microarray data processing, gene expression analysis, and statistical computing
-- **Affymetrix Support**: Supports Affymetrix array format parsing and chip type detection
-- **Result Visualization**: Supports data visualization and result reporting
-- **Error Handling**: Fail-fast on invalid bioinformatics configurations or unsupported data types
+SigmaOS-SigmaOS-affy follows a SigmaOS-affy pattern:
+- **SigmaOS-affy Core**: Provides SigmaOS-affy support, SigmaOS-affy management, and SigmaOS-affy tracking
+- **Management**: Supports SigmaOS-affy management, SigmaOS-affy configuration, and SigmaOS-affy lifecycle
+- **Tracking**: Supports SigmaOS-affy status, SigmaOS-affy tracking, and SigmaOS-affy lifecycle
+- **Error Handling**: Fail-fast on invalid SigmaOS-affy configurations or unsupported SigmaOS-affy types
 
 ## API
 The component provides the following public APIs:
-- `bio::microarray::parse(path)` - Parse Affymetrix microarray data file
-- `bio::expression::analyze(data)` - Analyze gene expression data
-- `bio::statistics::test(data, test_type)` - Perform statistical tests on biological data
-- `bio::result::visualize(data)` - Visualize analysis results and export figures
-- Error types for bioinformatics failure scenarios or unsupported data types
+-  - Manage a SigmaOS-affy by given configuration
+-  - Register a SigmaOS-affy by given name
+-  - Get SigmaOS-affy status and SigmaOS-affy availability
+-  - Track SigmaOS-affy management and SigmaOS-affy tracking
+- Error types for SigmaOS-affy failure scenarios or unsupported SigmaOS-affy types
 
 ## Test Structure (Arrange-Act-ASSERT)
 All tests follow the AAA pattern:
-1. **Arrange**: Set up test environment with specific bioinformatics configuration
-2. **Act**: Execute the code under test (data parsing, expression analysis)
-3. **Assert**: Verify the expected bioinformatics results
+1. **Arrange**: Set up test environment with specific SigmaOS-affy configuration
+2. **Act**: Execute the code under test (SigmaOS-affy init, SigmaOS-affy management)
+3. **Assert**: Verify the expected SigmaOS-affy results
 
 Example:
-```rust
-#[test]
-fn test_bio_parse_aaa() {
-    // Arrange
-    let data_path = "/data/test-affy.chip";
-    
-    // Act
-    let result = bio::microarray::parse(data_path);
-    
-    // Assert
-    assert!(result.is_ok());
-    let chip = result.unwrap();
-    assert!(chip.is_valid());
-}
-```
+
 
 ## Development
-- Follows Rust best practices with `#![forbid(unsafe_code)]`
-- Bioinformatics initialization is best-effort; gracefully degrades on unsupported configurations
-- Comprehensive error types for all bioinformatics failure scenarios
-- Unit tests provided for microarray parsing and expression analysis
-- Integration tests for full bioinformatics subsystem with actual microarray data
+- Follows Rust best practices with 
+- SigmaOS-affy initialization is best-effort; gracefully degrades on unsupported configurations
+- Comprehensive error types for all SigmaOS-affy failure scenarios
+- Unit tests provided for SigmaOS-affy management and configuration
+- Integration tests for full SigmaOS-affy system with actual SigmaOS-affy integration
 
 ## TODO
-- Add support for additional array formats (Illumina, Agilent)
-- Expand expression analysis capabilities ( differential expression, pathway analysis)
-- Add statistical test support (t-test, ANOVA, chi-squared)
-- Create integration tests with actual microarray data samples
-- Implement result persistence and analysis history features
+- Add support for additional SigmaOS-affy types
+- Expand SigmaOS-affy capabilities (SigmaOS-affy features, SigmaOS-affy configurations, SigmaOS-affy tracking)
+- Add lifecycle features (SigmaOS-affy tracking, SigmaOS-affy lifecycle, SigmaOS-affy propagation)
+- Create integration tests with actual SigmaOS-affy systems and SigmaOS-affy integration
+- Implement SigmaOS-affy persistence and SigmaOS-affy state management
